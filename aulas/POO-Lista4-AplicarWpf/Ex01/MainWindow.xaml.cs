@@ -24,5 +24,15 @@ namespace Ex01
         {
             InitializeComponent();
         }
+
+        private void calcular_Click(object sender, RoutedEventArgs e)
+        {
+            Abastecimento infos = new Abastecimento();
+            infos.SetKmRodados(double.Parse(km.Text));
+            infos.SetValorLitro(double.Parse(li.Text));
+            infos.SetValorPago(double.Parse(pa.Text));
+            rs_km.Text = infos.CalcReaisKm().ToString();
+            km_li.Text = infos.CalcKmLitro().ToString();
+        }
     }
 }
