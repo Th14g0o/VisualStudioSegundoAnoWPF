@@ -1,0 +1,26 @@
+﻿<Window x:Class="Aula002.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula002"
+        mc:Ignorable="d"
+        Title="Retangulo" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Area e Diagonal" Margin="87,40,87,39">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="63,76,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock x:Name="Altura" HorizontalAlignment="Left" Margin="311,76,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left" Margin="63,198,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left" Margin="311,198,0,0" TextWrapping="Wrap" Text="Diagonal" VerticalAlignment="Top" FontSize="20"/>
+                <TextBox x:Name="_base" HorizontalAlignment="Left" Margin="63,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
+                <TextBox x:Name="altu" Margin="311,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="240" HorizontalAlignment="Left"/>
+                <TextBox x:Name="area" HorizontalAlignment="Left" Margin="63,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
+                <TextBox x:Name="diag" HorizontalAlignment="Left" Margin="311,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
+                <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Margin="63,159,0,0" VerticalAlignment="Top" Width="488" FontSize="20"/>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
