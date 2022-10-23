@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aulas",
+    "\\aulas\\POO-Lista4-AplicarWpf",
+    "\\aulas\\POO-Lista4-AplicarWpf\\Ex01"
   ],
-  "SelectedNode": "\\POO-Lista4-AplicarWpf.sln",
+  "SelectedNode": "\\aulas\\POO-Lista4-AplicarWpf\\Ex01\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
