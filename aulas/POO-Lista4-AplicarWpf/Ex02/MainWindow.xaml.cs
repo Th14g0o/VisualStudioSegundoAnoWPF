@@ -24,5 +24,16 @@ namespace Ex02
         {
             InitializeComponent();
         }
+
+        private void inserir_Click(object sender, RoutedEventArgs e)
+        {
+            registrar infos = new registrar(nome.Text, fone.Text, emai.Text);
+            listadecontatos.Items.Add(infos);
+        }
+
+        private void exclui_Click(object sender, RoutedEventArgs e)
+        {
+            if (listadecontatos.SelectedItem != null) listadecontatos.Items.Remove(listadecontatos.SelectedItem);
+        }
     }
 }

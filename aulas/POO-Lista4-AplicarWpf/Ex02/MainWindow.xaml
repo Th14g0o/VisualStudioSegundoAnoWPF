@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Agenda" Height="450" Width="800">
     <Grid>
+        <GroupBox Header="Novo contato" Margin="40,23,0,0" HorizontalAlignment="Left" Width="720" Height="176" VerticalAlignment="Top">
+            <Grid>
+                <TextBlock x:Name="Nome" HorizontalAlignment="Left" Margin="20,19,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left" Margin="255,19,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left" Margin="490,19,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" FontSize="20"/>
+                <TextBox x:Name="nome" HorizontalAlignment="Left" TextWrapping="Wrap" Width="198" FontSize="20" Margin="20,51,0,0" RenderTransformOrigin="0.51,-0.102" Height="29" VerticalAlignment="Top"/>
+                <TextBox x:Name="emai" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20" Margin="255,51,0,0"/>
+                <TextBox x:Name="fone" Margin="490,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="198"/>
+                <Button x:Name="inserir" Content="Inserir" HorizontalAlignment="Left" Margin="20,89,0,0" VerticalAlignment="Top" Width="119" FontSize="25" Click="inserir_Click"/>
+                <Button x:Name="exclui" Content="Excluir" HorizontalAlignment="Left" Margin="144,89,0,0" VerticalAlignment="Top" Width="119" FontSize="25" Click="exclui_Click"/>
+
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="listadecontatos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="40,206,0,0" Height="193" VerticalAlignment="Top" HorizontalAlignment="Left" Width="720"/>
 
     </Grid>
 </Window>
