@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex03"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Retangulo" Height="450" Width="800">
     <Grid>
+        <GroupBox Header="Area e Diagonal" Margin="43,74,43,73">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="31,18,0,0" TextWrapping="Wrap" Text="Base" FontSize="25" Height="33" VerticalAlignment="Top"/>
+                <TextBox x:Name="base_valor" HorizontalAlignment="Left" Margin="31,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" FontSize="25"/>
+                <TextBlock HorizontalAlignment="Left" Margin="361,18,0,0" TextWrapping="Wrap" Text="Altura" FontSize="25" Height="33" VerticalAlignment="Top" RenderTransformOrigin="0.058,0.336"/>
+                <TextBox x:Name="altura_valor" Margin="361,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="25" HorizontalAlignment="Left" Width="297"/>
+                <Button x:Name="calcular" Content="Calcular" FontSize="25" Click="calcular_Click" Height="37" VerticalAlignment="Top" Margin="31,114,0,0" HorizontalAlignment="Left" Width="627" />
+                <TextBlock HorizontalAlignment="Left" Margin="31,172,0,0" TextWrapping="Wrap" Text="Area" FontSize="25" Height="34" VerticalAlignment="Top"/>
+                <TextBox x:Name="area" HorizontalAlignment="Left" Margin="31,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="297" FontSize="25"/>
+                <TextBlock HorizontalAlignment="Left" Margin="361,172,0,0" TextWrapping="Wrap" Text="Diagonal" FontSize="25" Height="33" VerticalAlignment="Top" RenderTransformOrigin="0.058,0.336"/>
+                <TextBox x:Name="diag" Margin="361,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="25" HorizontalAlignment="Left" Width="297"/>
+            </Grid>
+        </GroupBox>
 
     </Grid>
 </Window>

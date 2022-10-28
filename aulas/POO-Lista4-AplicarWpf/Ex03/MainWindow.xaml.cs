@@ -24,5 +24,14 @@ namespace Ex03
         {
             InitializeComponent();
         }
+
+        private void calcular_Click(object sender, RoutedEventArgs e)
+        {
+            retangulo info = new retangulo();
+            info.SetAltu(double.Parse(base_valor.Text));
+            info.SetBase(double.Parse(altura_valor.Text));
+            area.Text = info.CalcArea().ToString();
+            diag.Text = info.CalcDiag().ToString();
+        }
     }
 }

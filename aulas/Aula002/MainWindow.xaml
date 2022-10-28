@@ -13,11 +13,11 @@
                 <TextBlock x:Name="Altura" HorizontalAlignment="Left" Margin="311,76,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top" FontSize="20"/>
                 <TextBlock HorizontalAlignment="Left" Margin="63,198,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top" FontSize="20"/>
                 <TextBlock HorizontalAlignment="Left" Margin="311,198,0,0" TextWrapping="Wrap" Text="Diagonal" VerticalAlignment="Top" FontSize="20"/>
-                <TextBox x:Name="_base" HorizontalAlignment="Left" Margin="63,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
-                <TextBox x:Name="altu" Margin="311,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="240" HorizontalAlignment="Left"/>
-                <TextBox x:Name="area" HorizontalAlignment="Left" Margin="63,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
-                <TextBox x:Name="diag" HorizontalAlignment="Left" Margin="311,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20"/>
-                <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Margin="63,159,0,0" VerticalAlignment="Top" Width="488" FontSize="20"/>
+                <TextBox x:Name="basen" HorizontalAlignment="Left" Margin="63,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20" TextAlignment="Right"/>
+                <TextBox x:Name="altun" Margin="311,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="240" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBox x:Name="area" HorizontalAlignment="Left" Margin="63,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20" TextAlignment="Right"/>
+                <TextBox x:Name="diag" HorizontalAlignment="Left" Margin="311,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="20" TextAlignment="Right"/>
+                <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Margin="63,159,0,0" VerticalAlignment="Top" Width="488" FontSize="20" Click="calcular_Click"/>
 
             </Grid>
         </GroupBox>

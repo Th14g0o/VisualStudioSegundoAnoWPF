@@ -24,5 +24,15 @@ namespace Aula002
         {
             InitializeComponent();
         }
+
+        private void calcular_Click(object sender, RoutedEventArgs e)
+        {
+            Tri infos = new Tri();
+            infos.SetAltu(double.Parse(altun.Text));
+            infos.SetBase(double.Parse(basen.Text));
+            area.Text = infos.CalcArea().ToString();
+            diag.Text = infos.CalcDiag().ToString();
+
+        }
     }
 }

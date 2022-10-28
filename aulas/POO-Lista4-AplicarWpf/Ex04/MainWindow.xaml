@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex04"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Equação II Grau" Height="450" Width="800">
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="87,35,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" FontSize="25" Width="16" Height="34"/>
+        <TextBlock Margin="0,35,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" FontSize="25" Height="34" HorizontalAlignment="Center" Width="16"/>
+        <TextBlock Margin="563,35,0,0" TextWrapping="Wrap" Text="C" FontSize="25" HorizontalAlignment="Left" Width="16" Height="34" VerticalAlignment="Top"/>
+        <TextBlock x:Name="deltablock" HorizontalAlignment="Left" Margin="87,262,0,0" TextWrapping="Wrap" Text="Delta" VerticalAlignment="Top" FontSize="25"/>
+        <TextBlock x:Name="x1block" HorizontalAlignment="Center" Margin="0,262,0,0" TextWrapping="Wrap" Text="X1" VerticalAlignment="Top" FontSize="25"/>
+        <TextBlock x:Name="x2blo" HorizontalAlignment="Left" Margin="571,262,0,0" TextWrapping="Wrap" Text="X2" VerticalAlignment="Top" FontSize="25"/>
+        <Button x:Name="Calcular" Content="Calcular" Margin="87,171,0,0" VerticalAlignment="Top" FontSize="25" Height="72" HorizontalAlignment="Left" Width="626" Click="Calcular_Click"/>
+        <TextBox x:Name="coeficiente_a" HorizontalAlignment="Left" Margin="87,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
+        <TextBox x:Name="coeficiente_b" HorizontalAlignment="Left" Margin="325,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
+        <TextBox x:Name="coeficiente_c" HorizontalAlignment="Left" Margin="563,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
+        <TextBox x:Name="x_2" HorizontalAlignment="Left" Margin="563,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
+        <TextBox x:Name="x_1" HorizontalAlignment="Left" Margin="325,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
+        <TextBox x:Name="delt" HorizontalAlignment="Left" Margin="87,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="25" Height="38"/>
 
     </Grid>
 </Window>

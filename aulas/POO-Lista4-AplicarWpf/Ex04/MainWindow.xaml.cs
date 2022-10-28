@@ -24,5 +24,20 @@ namespace Ex04
         {
             InitializeComponent();
         }
+
+        private void Calcular_Click(object sender, RoutedEventArgs e)
+        {
+            EquacaoIIGrau info = new EquacaoIIGrau();
+            info.SetABC(double.Parse(coeficiente_a.Text), double.Parse(coeficiente_b.Text), double.Parse(coeficiente_c.Text));
+            delt.Text = info.CalcDelta().ToString();
+            if (info.RaizesReais() == true)
+            {
+                delt.Text = info.CalcDelta().ToString();
+                x_1.Text = info.CalcX1().ToString();
+                x_2.Text = info.CalcX2().ToString();
+            }
+            else delt.Text = "Não é real";
+
+        }
     }
 }
