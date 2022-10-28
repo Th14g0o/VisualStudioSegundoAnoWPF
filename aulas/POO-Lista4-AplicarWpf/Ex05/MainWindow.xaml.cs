@@ -24,5 +24,13 @@ namespace Ex05
         {
             InitializeComponent();
         }
+
+        private void calcular_button_Click(object sender, RoutedEventArgs e)
+        {
+            Numeros intervalo = new Numeros(int.Parse(inicio_intervalo.Text), int.Parse(fim_intervalo.Text));
+            //intervalo.Calcular();
+        }
+
+        
     }
 }
