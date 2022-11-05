@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NGcNwyyyVdx4R/mAiTOFK6q9E9nZBSoASugP3MXKISp4EHu949Z+DbfK6Lf9OnYijnCZvjzP8SvFDg3Ufn2txg==",
+  "dgSpecHash": "o/ViknzMudOfE1xsZ3n91HzxIj/osn8WjCmghe2Gc+4LU5NbafCCROSv+O+rWRFIYe+5QGIA1kg5KJjpLixqrg==",
   "success": true,
   "projectFilePath": "C:\\AulaVS\\VisualStudioAulas\\aulas\\aula004\\aula004.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Thiago Gonsalves\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\Thiago Gonsalves\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thiago Gonsalves\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thiago Gonsalves\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
