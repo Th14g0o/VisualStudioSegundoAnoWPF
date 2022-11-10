@@ -23,16 +23,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBox Name="bolas" Text="50" Grid.Column="1" Margin="10"/>
+                <TextBox x:Name="bolas_ini" Text="50" Grid.Column="1" Margin="10"/>
                 <Slider Name="slider" VerticalAlignment="Center" Margin="10" Minimum="10" Maximum="100" Value="50" ValueChanged="slider_ValueChanged"  IsSnapToTickEnabled="True" TickFrequency="1"/>
          
-                <Button Content="Iniciar" Grid.Column="2" Margin="10"/>
+                <Button x:Name="inicio" Content="Iniciar" Grid.Column="2" Margin="10" Click="inicio_Click"/>
             </Grid>
         </GroupBox>
-        <Button Content="Sortear" Margin="10" Grid.Row="1" Grid.Column="0"/>
-        <TextBox Text="35" Grid.Row="1" Grid.Column="1" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72"/>
+        <Button x:Name="sorteando" Content="Sortear" Margin="10" Grid.Row="1" Grid.Column="0" Click="Button_Click"/>
+        <TextBox x:Name="ultima_bola" Grid.Row="1" Grid.Column="1" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72"/>
         <GroupBox Header="Sorteados" Margin="10" Grid.ColumnSpan="2" Grid.Row="2">
-            <TextBox Text="12 - 3 - 62" />
+            <TextBox x:Name="usadas" />
         </GroupBox>
 
     </Grid>
