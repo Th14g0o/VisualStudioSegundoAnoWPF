@@ -20,6 +20,7 @@ namespace aula004
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Bingo jogo = new Bingo();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,28 +31,48 @@ namespace aula004
             bolas_ini.Text = slider.Value.ToString();
         }
 
-        Bingo jogo = new Bingo();
 
         private void inicio_Click(object sender, RoutedEventArgs e)
         {
             //Bingo jogo = new Bingo();
             jogo.Iniciar(int.Parse(bolas_ini.Text));
+            sorteando.IsEnabled = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Bingo jogo = new Bingo();
             //jogo.Iniciar(int.Parse(bolas_ini.Text));
-            if (jogo.Proximo() == -1) sorteando.IsEnabled = false;
-            ultima_bola.Text = (jogo.Proximo()).ToString();
-            int tam = jogo.Sorteados().Length;
-            string bolas_usadas = "";
-            for (int indice = 0; indice < tam; indice++)
+            int bolinha = jogo.Proximo();
+            if (bolinha == -1)
             {
-                if (indice > 0) bolas_usadas += " - ";
-                bolas_usadas += ((jogo.Sorteados())[indice]).ToString();
+                sorteando.IsEnabled = false;
+                inicio.IsEnabled = true;
+                ultima_bola.Text = "Acabou";
+
             }
-            usadas.Text = bolas_usadas;
+            else
+            {
+                inicio.IsEnabled = false;
+                ultima_bola.Text = bolinha.ToString();
+
+                int[] valores = jogo.Sorteados();
+                int tam = valores.Length;
+                string bolas_usadas = "";
+                for (int indice = 0; indice < tam; indice++)
+                {
+                    if (indice > 0) bolas_usadas += " - ";
+                    bolas_usadas += valores[indice].ToString();
+                }
+                usadas.Text = bolas_usadas;
+            }
+            
+
+            
+
         }
+
+     
+      
     }
 }
