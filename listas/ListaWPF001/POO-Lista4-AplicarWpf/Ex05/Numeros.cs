@@ -24,40 +24,40 @@ namespace Ex05
             }
        
         }
-        public int[] Calcular(bool? i, bool? p)
+        public int[] Calcular(bool i, bool p)
         {
-
-            string ns = "";
+            int tam = fim;
+            if (inicio == 0) tam++;
+            if (inicio < 0) tam += Math.Abs(inicio) + 2;
             int count = 0;
+            int[] todos = new int[tam];
 
             for (int valor = inicio; valor <= fim; valor++)
             {
                 if (i == true && p == true)
                 {
-                    if (count > 0) ns += " ";
-                    ns += valor.ToString();
+                    todos[count] = valor;
                     count++;
                 }
                 else if (i == true && p == false)
                 {
-                    if (count > 0 && valor % 2 != 0) ns += " ";
-                    if (valor % 2 != 0) ns += valor.ToString();
-                    count++;
+                    if (valor % 2 != 0)
+                    {
+                        todos[count] = valor;
+                        count++;
+                    }
                 }
                 else
                 {
-                    if (count > 0 && valor % 2 == 0) ns += " ";
-                    if (valor % 2 == 0) ns += valor.ToString();
-                    count++;
+                    if (valor % 2 == 0)
+                    {
+                        todos[count] = valor;
+                        count++;
+                    }
                 }
             }
-            count = 0;
-            string[] nums = ns.Split();
-            int[] interv = new int[nums.Length];
-            for (int indice = 0; indice < nums.Length; indice++)
-            {
-                interv[indice] = int.Parse(nums[indice]);
-            }
+            int[] interv = new int[count];
+            Array.Copy(todos, interv, count);
             return interv;
 
 

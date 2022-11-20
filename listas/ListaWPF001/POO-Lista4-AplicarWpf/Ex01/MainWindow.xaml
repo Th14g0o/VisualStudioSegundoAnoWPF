@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex01"
         mc:Ignorable="d"
-        Title="Abastecimento" Height="694" Width="900">
+        Title="Abastecimento" Height="450" Width="848">
     <Grid>
         <TextBlock x:Name="kmrodados" HorizontalAlignment="Left" Margin="81,48,0,0" TextWrapping="Wrap" Text="Km Rodados" VerticalAlignment="Top" FontSize="25"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,92,0,0" TextWrapping="Wrap" Text="Valor Pago R$" VerticalAlignment="Top" FontSize="25"/>
@@ -13,11 +13,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="81,330,0,0" TextWrapping="Wrap" Text="R$ / Km" VerticalAlignment="Top" FontSize="25"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,136,0,0" TextWrapping="Wrap" Text="Valor Litro R$" VerticalAlignment="Top" FontSize="25"/>
         <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Width="638" Click="calcular_Click" Margin="81,196,0,0"/>
-        <TextBox x:Name="km" HorizontalAlignment="Left" Margin="289,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
-        <TextBox x:Name="pa" HorizontalAlignment="Left" Margin="289,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
-        <TextBox x:Name="li" HorizontalAlignment="Left" Margin="289,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
-        <TextBox x:Name="km_li" HorizontalAlignment="Left" Margin="289,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
-        <TextBox x:Name="rs_km" HorizontalAlignment="Left" Margin="289,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
+        <TextBox x:Name="km" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="289,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
+        <TextBox x:Name="pa" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="289,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
+        <TextBox x:Name="li" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="289,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
+        <TextBox x:Name="km_li" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="289,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
+        <TextBox x:Name="rs_km" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="289,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" FontSize="25"/>
 
     </Grid>
 </Window>

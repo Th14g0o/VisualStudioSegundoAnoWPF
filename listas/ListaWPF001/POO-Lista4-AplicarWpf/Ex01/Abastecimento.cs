@@ -25,7 +25,7 @@ namespace Ex01
 
         public double CalcKmLitro()
         {
-            return km / litros;
+            return km / (valor/litros);
         }
         public double CalcReaisKm()
         {

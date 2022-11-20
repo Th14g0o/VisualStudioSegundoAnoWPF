@@ -31,8 +31,8 @@ namespace Ex01
             infos.SetKmRodados(double.Parse(km.Text));
             infos.SetValorLitro(double.Parse(li.Text));
             infos.SetValorPago(double.Parse(pa.Text));
-            rs_km.Text = infos.CalcReaisKm().ToString();
-            km_li.Text = infos.CalcKmLitro().ToString();
+            rs_km.Text = Math.Round(infos.CalcReaisKm(), 2).ToString("N2");
+            km_li.Text = Math.Round(infos.CalcKmLitro(),2).ToString("N2");
         }
     }
 }
