@@ -37,6 +37,9 @@ namespace aula004
             //Bingo jogo = new Bingo();
             jogo.Iniciar(int.Parse(bolas_ini.Text));
             sorteando.IsEnabled = true;
+            inicio.IsEnabled = false;
+            slider.IsEnabled = false;
+            bolas_ini.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -48,12 +51,13 @@ namespace aula004
             {
                 sorteando.IsEnabled = false;
                 inicio.IsEnabled = true;
+                slider.IsEnabled = true;
+                bolas_ini.IsEnabled = true;
                 ultima_bola.Text = "Acabou";
 
             }
             else
             {
-                inicio.IsEnabled = false;
                 ultima_bola.Text = bolinha.ToString();
 
                 int[] valores = jogo.Sorteados();

@@ -45,7 +45,7 @@ namespace Ex05 {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.10.0")]
         public void InitializeComponent() {
             
             #line 5 "..\..\..\App.xaml"
@@ -60,7 +60,7 @@ namespace Ex05 {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.10.0")]
         public static void Main() {
             Ex05.App app = new Ex05.App();
             app.InitializeComponent();

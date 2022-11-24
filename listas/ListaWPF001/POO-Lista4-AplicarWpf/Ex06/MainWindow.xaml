@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex06"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Bingo" Height="350" Width="700">
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox x:Name="NumeroDeBolas" Header="Numero de bolas" Grid.Row="0" Grid.ColumnSpan="2" >
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="quant_bolas"  Text="50" Grid.Column="1" Margin="10"/>
+                <Slider x:Name="slider" VerticalAlignment="Center" Margin="10" Minimum="10" Maximum="100" Value="50" IsSnapToTickEnabled="True" TickFrequency="1" ValueChanged="slider_ValueChanged" />
+                <Button x:Name="iniciar_jogo" Grid.Column="2" Content="INICIAR" Margin="10" Click="iniciar_jogo_Click"/>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="sorteando" Content="Sortear" Margin="10" Grid.Row="1" Grid.Column="0" IsEnabled="False" Click="sorteando_Click"/>
+        <TextBox x:Name="ultima_bola" Grid.Row="1" Grid.Column="1" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="72"/>
+
+        <GroupBox Header="Sorteados" Margin="10" Grid.ColumnSpan="2" Grid.Row="2">
+            <TextBox x:Name="usadas"  />
+        </GroupBox>
 
     </Grid>
 </Window>

@@ -16,7 +16,7 @@ namespace Ex02
 
             foreach (char caracter in e)
             {
-                if (caracter == '@') ema = e;
+                if (caracter != ' ') ema = e;
             }
 
             int cont = 0;

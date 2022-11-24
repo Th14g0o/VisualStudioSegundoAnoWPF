@@ -27,10 +27,12 @@ namespace Ex05
 
         private void calcular_button_Click(object sender, RoutedEventArgs e)
         {
+            
             Numeros intervalo = new Numeros(int.Parse(inicio_intervalo.Text), int.Parse(fim_intervalo.Text));
-            for (int indice = 0; indice < intervalo.Calcular(impars.IsChecked, pars.IsChecked).Length; indice++)
+
+            for (int indice = 0; indice < intervalo.Calcular(impars.IsChecked.Value, pars.IsChecked.Value).Length; indice++)
             {
-                IntervaloNumerico.Items.Add(intervalo.Calcular(impars.IsChecked, pars.IsChecked)[indice]);
+                IntervaloNumerico.Items.Add(intervalo.Calcular(impars.IsChecked.Value, pars.IsChecked.Value)[indice]);
             }
         }
 
