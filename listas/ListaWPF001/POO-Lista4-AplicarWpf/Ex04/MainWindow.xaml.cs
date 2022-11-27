@@ -28,15 +28,24 @@ namespace Ex04
         private void Calcular_Click(object sender, RoutedEventArgs e)
         {
             EquacaoIIGrau info = new EquacaoIIGrau();
+            double x1, x2;
             info.SetABC(double.Parse(coeficiente_a.Text), double.Parse(coeficiente_b.Text), double.Parse(coeficiente_c.Text));
-            delt.Text = info.CalcDelta().ToString();
-            if (info.RaizesReais() == true)
+            if(info.RaizesReais() == true)
             {
                 delt.Text = info.CalcDelta().ToString();
-                x_1.Text = info.CalcX1().ToString();
-                x_2.Text = info.CalcX2().ToString();
+                info.X1(out x1);
+                info.X2(out x2);
+                x_1.Text = x1.ToString();
+                x_2.Text = x2.ToString();
             }
-            else delt.Text = "Não é real";
+            else
+            {
+                delt.Text = info.CalcDelta().ToString();
+                x_1.Text = "Não é real";
+                x_2.Text = "Não é real";
+            }
+
+
 
         }
     }

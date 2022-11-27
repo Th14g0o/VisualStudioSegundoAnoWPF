@@ -23,20 +23,33 @@ namespace Ex04
         }
         public double CalcDelta()
         {
-            return -4*a1*c1 + b1*b1;
+            return b1 * b1 -4*a1*c1;
         }
         public bool RaizesReais()
         {
             if (CalcDelta() < 0 || a1 == 0) return false;
             return true;
         }
-        public double CalcX1()
+        public bool X1(out double x)
         {
-            return (b1 * -1 + Math.Sqrt(CalcDelta())) / (2 * a1);
+            if (CalcDelta() < 0 || a1 == 0)
+            {
+                x = 0;
+                return false;
+            }
+            x = (b1 * -1 + Math.Sqrt(CalcDelta())) / (2 * a1);
+            return true;
         }
-        public double CalcX2()
+        public bool X2(out double x)
         {
-            return (b1 * -1 - Math.Sqrt(CalcDelta())) / (2 * a1);
+            if (CalcDelta() < 0 || a1 == 0)
+            {
+                x = 0;
+                return false;
+            }
+
+            x = (b1 * -1 - Math.Sqrt(CalcDelta())) / (2 * a1);
+            return true;
         }
     }
 }
