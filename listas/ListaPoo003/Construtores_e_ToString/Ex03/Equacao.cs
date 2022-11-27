@@ -29,7 +29,7 @@ namespace Ex03
         }
         public bool RaizesReais(out double x1, out double x2)
         {
-            if (Delta() >= 0 && (a > 0 || a < 0))
+            if (Delta() >= 0 && (a < 0 || a > 0))
             {
                 x1 = (b * -1 + Delta()) / (2 * a);
                 x2 = (b * -1 + Delta()) / (2 * a);
@@ -42,7 +42,7 @@ namespace Ex03
         }
         public double Delta()
         {
-            return b * b - 4 * a * c;
+            return b * b - 4 * a * c);
         }
         public override string ToString()
         {
