@@ -1,0 +1,18 @@
+﻿<Window x:Class="Ex1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex1"
+        mc:Ignorable="d"
+        Title="Intervalo" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Inicio" TextAlignment="Left" Margin="61,10,0,0" FontSize="50" HorizontalAlignment="Left" Width="200" Height="77" VerticalAlignment="Top"/>
+        <TextBlock Text="Fim" TextAlignment="Left" FontSize="50" Height="77" Margin="424,10,0,0" HorizontalAlignment="Left" Width="198" VerticalAlignment="Top"/>
+        <TextBox x:Name="ini" Text="" FontSize="30" TextAlignment="Left" Height="50" Margin="61,92,0,0" HorizontalAlignment="Left" Width="315" VerticalAlignment="Top"/>
+        <TextBox x:Name="fim" Text="" FontSize="30" TextAlignment="Left" Height="50" Margin="424,92,0,0" HorizontalAlignment="Left" Width="315" VerticalAlignment="Top" />
+        <Button x:Name="start" Width="200" Height="45" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Números" FontSize="30" Margin="61,156,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="start_Click" />
+        <ListBox x:Name="todos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,217,0,0" HorizontalAlignment="Center" Width="678" Height="189" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
