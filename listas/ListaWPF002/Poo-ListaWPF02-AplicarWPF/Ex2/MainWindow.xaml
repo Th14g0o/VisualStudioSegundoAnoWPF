@@ -1,0 +1,19 @@
+﻿<Window x:Class="Ex2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex2"
+        mc:Ignorable="d"
+        Title="Artilheiro" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="37,39,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="410,39,0,0" TextWrapping="Wrap" Text="Gols" VerticalAlignment="Top" FontSize="48"/>
+        <TextBox x:Name="nome" FontSize="30" HorizontalAlignment="Left" Margin="36,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354"/>
+        <TextBox x:Name="gol" FontSize="30" HorizontalAlignment="Left" Margin="410,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354"/>
+        <Button x:Name="inserindo" Content="Inserir" HorizontalAlignment="Left" Margin="36,165,0,0" VerticalAlignment="Top" Width="120" Height="38" Click="inserindo_Click"/>
+        <Button x:Name="mostrar" Content="Artilheiro" HorizontalAlignment="Left" Margin="174,165,0,0" VerticalAlignment="Top" Width="120" Height="38" Click="mostrar_Click"/>
+        <ListBox x:Name="todos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,221,0,0" Height="176" VerticalAlignment="Top" HorizontalAlignment="Left" Width="728"/>
+
+    </Grid>
+</Window>
