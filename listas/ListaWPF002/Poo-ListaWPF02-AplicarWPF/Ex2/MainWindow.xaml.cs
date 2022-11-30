@@ -39,7 +39,7 @@ namespace Ex2
             todos.Items.Clear();
             foreach(Jogador j in pessoas.Listar())
             {
-                todos.Items.Add($"{j.GetNome()} - {j.GetGols()}");
+                todos.Items.Add($"{j.GetNome()} - {j.GetGols()} gols");
             }
         }
     }
