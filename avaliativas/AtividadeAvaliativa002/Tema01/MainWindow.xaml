@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema01"
         mc:Ignorable="d"
-        Title="CAMPEONATO NACIONAL" Height="450" Width="800">
+        Title="CAMPEONATO NACIONAL" Height="450" Width="800" Foreground="White" Background="Black">
     <Grid Background="#FF26355A">
-        <GroupBox Header="Time" Height="131" VerticalAlignment="Top" HorizontalAlignment="Left" Width="750" Margin="25,0,0,0" BorderBrush="White" Foreground="#FF1FB921" FontFamily="Comic Sans MS">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="227*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Time" Height="131" VerticalAlignment="Top" HorizontalAlignment="Left" Width="750" Margin="25,0,0,0" BorderBrush="White" Foreground="#FF1FB921" FontFamily="Comic Sans MS" Grid.ColumnSpan="2">
             <Grid>
                 <TextBlock Text="Nome do time" Width="130" Height="25 " Margin="10,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
                 <TextBlock Text="Estado" Width="130" Height="25 " Margin="428,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
@@ -16,7 +20,7 @@
                 <Button x:Name="criar"  Content="Criar" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,70,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Center" Width="274" Foreground="#FFFFEA00" Background="#FF229424" BorderBrush="#FFFFEA00" BorderThickness="5,2,5,1.6" FontFamily="Comic Sans MS" Click="criar_Click"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Jogador" Margin="39,136,0,0" Height="133" VerticalAlignment="Top" HorizontalAlignment="Left" Width="722" Foreground="#FF1FB921" FontFamily="Comic Sans MS">
+        <GroupBox Header="Jogador" Margin="39,136,0,0" Height="133" VerticalAlignment="Top" HorizontalAlignment="Left" Width="722" Foreground="#FF1FB921" FontFamily="Comic Sans MS" Grid.ColumnSpan="2">
             <Grid>
                 <TextBlock Text="Nome" Width="130" Height="25 " Margin="10,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
                 <TextBlock Text="Camisa" Width="130" Height="25 " Margin="272,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
@@ -29,8 +33,8 @@
                 <Button x:Name="listar"  Content="Listar" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="171,70,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156" Background="#FF229424" BorderBrush="#FFFFEA00" Foreground="#FFFFEA00" BorderThickness="5,2,5,2" FontFamily="Comic Sans MS" Click="listar_Click" IsEnabled="False"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="atleta" Header="Jogadores" Margin="25,269,0,0" Padding="0" HorizontalAlignment="Left" Width="750" Height="135" VerticalAlignment="Top" Foreground="#FF1FB921" FontFamily="Comic Sans MS">
-            <ListBox x:Name="atletas" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FF26355A" Foreground="#FF1FB921" FontFamily="Comic Sans MS" BorderBrush="#FF26355A"/>
+        <GroupBox x:Name="atleta" Header="Jogadores" Margin="25,269,0,0" Padding="0" HorizontalAlignment="Left" Width="750" Height="135" VerticalAlignment="Top" Foreground="#FF1FB921" FontFamily="Comic Sans MS" Grid.ColumnSpan="2">
+            <ListBox x:Name="atletas" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FF26355A" Foreground="#FF1FB921" FontFamily="Comic Sans MS" BorderBrush="#FF26355A" />
         </GroupBox>
 
     </Grid>

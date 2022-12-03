@@ -14,6 +14,8 @@ namespace Tema01
 
         public void Inserir(Jogador j)
         {
+            //if (indice == jogadores.Length)
+                //Array.Resize(ref jogadores, jogadores.Length + 10);
             jogadores[indice] = j;
             indice++;
         }
@@ -23,7 +25,7 @@ namespace Tema01
             Array.Copy(jogadores, vetor, indice);
             return vetor;
         }
-        public Jogador[] Artilheiro()
+        public Jogador Artilheiro()
         {
             Jogador[] vetor = new Jogador[indice];
             Array.Copy(jogadores, vetor, indice);
@@ -72,7 +74,7 @@ namespace Tema01
                 }
             }
 
-            return j;
+            return j[0];
         }
 
         public Time(string nome, string estado)

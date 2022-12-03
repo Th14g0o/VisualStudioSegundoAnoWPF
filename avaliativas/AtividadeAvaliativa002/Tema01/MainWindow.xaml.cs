@@ -28,7 +28,7 @@ namespace Tema01
         
 
         private void criar_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             t = new Time(nt.Text, et.Text);
             atleta.Header = t;
             inserir.IsEnabled = true;
@@ -39,10 +39,18 @@ namespace Tema01
 
         private void inserir_Click(object sender, RoutedEventArgs e)
         {
-            Jogador j = new Jogador(nj.Text, cj.Text, int.Parse(gj.Text));
-            t.Inserir(j);
-            if (t.Listar().Length == 22)
-                inserir.IsEnabled = false;
+            int gols;
+            if (int.TryParse(gj.Text, out gols) == true)
+            {
+                Jogador j = new Jogador(nj.Text, cj.Text, gols);
+                t.Inserir(j);
+                if (t.Listar().Length == 22)
+                {
+                    criar.IsEnabled = true;
+                    inserir.IsEnabled = false;
+                }                 
+            }
+            
         }
 
         private void listar_Click(object sender, RoutedEventArgs e)
@@ -55,8 +63,8 @@ namespace Tema01
         private void artilheiro_Click(object sender, RoutedEventArgs e)
         {
             atletas.Items.Clear();
-            foreach (Jogador j in t.Artilheiro())
-                atletas.Items.Add(j);
+            atletas.Items.Add(t.Artilheiro());
         }
+
     }
 }
