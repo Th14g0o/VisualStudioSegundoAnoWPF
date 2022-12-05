@@ -27,8 +27,9 @@
                 <TextBlock Grid.Row="0" Grid.Column="1" Text="Sigla da fabricante:" Margin="3" FontSize="18"/>
                 <TextBox x:Name="fabricantes" Grid.Column="1" Grid.Row="1" Margin="1" FontSize="18" />
                 <TextBox x:Name="fabricanten" Grid.Column="0" Margin="1" Grid.Row="1" FontSize="18" />
-                <Button x:Name="cria" Content="Criar" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="2" FontSize="18" Click="cria_Click" Background="#FF707070" Foreground="White"/>
-                
+                <Button x:Name="cria" Content="Criar" Grid.Column="0" Grid.Row="2"  Margin="2" FontSize="18" Click="cria_Click" Background="#FF707070" Foreground="White"/>
+                <Button x:Name="novo" Content="Nova fabricante" Grid.Column="1" Grid.Row="2"  Margin="2" FontSize="18" Background="#FF707070" Foreground="White" Click="novo_Click" IsEnabled="False"/>
+
             </Grid>
         </GroupBox>
         <GroupBox Grid.Row="1" Header="Veiculo" Margin="10" Foreground="White">

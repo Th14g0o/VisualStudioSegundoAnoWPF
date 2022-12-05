@@ -15,7 +15,7 @@ namespace Tema01
         public void Inserir(Jogador j)
         {
             //if (indice == jogadores.Length)
-                //Array.Resize(ref jogadores, jogadores.Length + 10);
+                //Array.Resize(ref jogadores, jogadores.Length + 11);
             jogadores[indice] = j;
             indice++;
         }
@@ -27,54 +27,45 @@ namespace Tema01
         }
         public Jogador Artilheiro()
         {
-            Jogador[] vetor = new Jogador[indice];
-            Array.Copy(jogadores, vetor, indice);
 
             int[] maiores = new int[indice];
             for (int i = 0; i < indice; i++)
-                maiores[i] = vetor[i].GetGols();
+                maiores[i] = Listar()[i].GetGols();
             Array.Sort(maiores);
             Array.Reverse(maiores);
 
+            //Jogador jota = Listar()[0];
+            //for (int i2 = 0; i2 < indice; i2++)
+            //{
+                //int jg = Listar()[i2].GetGols();
+                //if (maiores[0] == jg)
+                    //jota = Listar()[i2];
+            //}
+            //return jota;
 
             int quant = 0;
-            for (int i = 0; i < indice; i++)
+            for (int i2 = 0; i2 < indice; i2++)
             {
-                int v1 =maiores[i];
-                for (int i2 = 0; i2 < indice; i2++)
-                {
-                    int v2 = maiores[i2];
-                    if (v1 == v2)
-                        quant++;
-             
-                }
-                break;
+                int v2 = maiores[i2];
+                if (maiores[0] == v2)
+                    quant++;         
             }
-
-            int[] posis = new int[quant];
-            for (int i = 0; i < quant; i++)
-                posis[i] = -500;
 
             Jogador[] j = new Jogador[quant];
-
-            for (int i = 0; i < quant; i++)
+            int count = 0;
+            for (int i2 = 0; i2 < indice; i2++)
             {
-                int v1 = maiores[i];
-                for (int i2 = 0; i2 < indice; i2++)
+                int jg = Listar()[i2].GetGols();
+                if (maiores[0] == jg)
                 {
-                    int jg = vetor[i2].GetGols();
-                    if (v1 == jg && Array.IndexOf(posis, i2) == -1)
-                    {
-                        j[i] = vetor[i2];
-                        posis[i] = i2;
-                        break;
-                    }
-                    else
-                        j[i] = vetor[i2];
+                    j[count] = Listar()[i2];
+                    count++;
                 }
             }
 
-            return j[0];
+            Random intervalo = new Random();
+
+            return j[intervalo.Next(0, quant)];
         }
 
         public Time(string nome, string estado)

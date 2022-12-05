@@ -31,9 +31,8 @@ namespace Tema02
             fabri = new Fabricante(fabricanten.Text, fabricantes.Text);
             mudar.Header = fabri;
             inserib.IsEnabled = true;
-            listab.IsEnabled = true;
-            maisb.IsEnabled = true;
-
+            novo.IsEnabled = true;
+            cria.IsEnabled = false;
         }
 
         private void inserib_Click(object sender, RoutedEventArgs e)
@@ -43,6 +42,9 @@ namespace Tema02
             {
                 Veiculo v = new Veiculo(veiculon.Text, veiculom.Text, preco);
                 fabri.Inserir(v);
+                lista.Items.Clear();
+                listab.IsEnabled = true;
+                maisb.IsEnabled = true;
             }
         }
 
@@ -57,6 +59,16 @@ namespace Tema02
         {
             lista.Items.Clear();
             lista.Items.Add(fabri.MaiorPreco());
+        }
+
+        private void novo_Click(object sender, RoutedEventArgs e)
+        {
+            lista.Items.Clear();
+            cria.IsEnabled = true;
+            inserib.IsEnabled = false;
+            listab.IsEnabled = false;
+            maisb.IsEnabled = false;
+            novo.IsEnabled = false;
         }
     }
 }

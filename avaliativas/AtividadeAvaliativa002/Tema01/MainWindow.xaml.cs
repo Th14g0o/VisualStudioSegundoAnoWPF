@@ -31,10 +31,13 @@ namespace Tema01
         { 
             t = new Time(nt.Text, et.Text);
             atleta.Header = t;
+            atletas.Items.Clear();
             inserir.IsEnabled = true;
-            artilheiro.IsEnabled = true;
-            listar.IsEnabled = true;
             criar.IsEnabled = false;
+            artilheiro.IsEnabled = false;
+            listar.IsEnabled = false;
+            criar.Content = "";
+
         }
 
         private void inserir_Click(object sender, RoutedEventArgs e)
@@ -44,8 +47,12 @@ namespace Tema01
             {
                 Jogador j = new Jogador(nj.Text, cj.Text, gols);
                 t.Inserir(j);
+                artilheiro.IsEnabled = true;
+                listar.IsEnabled = true;
+                atletas.Items.Clear();
                 if (t.Listar().Length == 22)
                 {
+                    criar.Content = "Criar novo time";
                     criar.IsEnabled = true;
                     inserir.IsEnabled = false;
                 }                 

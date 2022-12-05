@@ -20,7 +20,7 @@
                 <Button x:Name="criar"  Content="Criar" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,70,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Center" Width="274" Foreground="#FFFFEA00" Background="#FF229424" BorderBrush="#FFFFEA00" BorderThickness="5,2,5,1.6" FontFamily="Comic Sans MS" Click="criar_Click"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Jogador" Margin="39,136,0,0" Height="133" VerticalAlignment="Top" HorizontalAlignment="Left" Width="722" Foreground="#FF1FB921" FontFamily="Comic Sans MS" Grid.ColumnSpan="2">
+        <GroupBox Header="Jogador" Margin="25,136,0,0" Height="133" VerticalAlignment="Top" HorizontalAlignment="Left" Width="750" Foreground="#FF1FB921" FontFamily="Comic Sans MS" Grid.ColumnSpan="2">
             <Grid>
                 <TextBlock Text="Nome" Width="130" Height="25 " Margin="10,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
                 <TextBlock Text="Camisa" Width="130" Height="25 " Margin="272,10,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
