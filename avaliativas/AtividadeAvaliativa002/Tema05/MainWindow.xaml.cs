@@ -42,7 +42,7 @@ namespace Tema05
         }
         private void inserir_Click(object sender, RoutedEventArgs e)
         {
-            exibir.Items.Clear();
+            
             int i;
             Aluno a = new Aluno("-1", "-1", "-1", -1);
             a.SetEmail(email.Text);
@@ -53,6 +53,7 @@ namespace Tema05
 
             if (a.Verifica() == true)
             {
+                exibir.Items.Clear();
                 tur.Inserir(a);
                 nome.Text = "";
                 matricula.Text = "";
