@@ -24,33 +24,45 @@ namespace Tema05
         {
             InitializeComponent();
         }
-        private Turma tur = new Turma("", "");
+        private Turma tur;
         private void criar_Click(object sender, RoutedEventArgs e)
         {
-            if(curso.Text != "" && codigo.Text != "")
+            tur = new Turma("", "");
+            tur.SetCurso(curso.Text);
+            tur.SetCodigo(codigo.Text);
+            if (tur.GetCurso() != "" && tur.GetCodigo() != "")
             {
-                tur = new Turma(curso.Text, codigo.Text);
                 lista.Header = tur;
                 inserir.IsEnabled = true;
                 criar.IsEnabled = false;
-            }
-            
+                reiniciar.IsEnabled = true;
+                codigo.IsEnabled = false;
+                curso.IsEnabled = false;
+            }   
         }
-
         private void inserir_Click(object sender, RoutedEventArgs e)
         {
+            exibir.Items.Clear();
             int i;
-            if (int.TryParse(ira.Text, out i) && email.Text.ToString().IndexOf('@') != -1 && nome.Text != "" && matricula.Text != "")
+            Aluno a = new Aluno("-1", "-1", "-1", -1);
+            a.SetEmail(email.Text);
+            if (int.TryParse(ira.Text, out i) == true)
+                a.SetIRA(i);
+            a.SetNome(nome.Text);
+            a.SetMatricula(matricula.Text);       
+
+            if (a.Verifica() == true)
             {
-                exibir.Items.Clear();
-                Aluno a = new Aluno(email.Text, nome.Text, matricula.Text, i);
                 tur.Inserir(a);
+                nome.Text = "";
+                matricula.Text = "";
+                ira.Text = "";
+                email.Text = "";
                 listar.IsEnabled = true;
                 maior_ira.IsEnabled = true;
-                reiniciar.IsEnabled = true;
             }
-        }
 
+        }
         private void reiniciar_Click(object sender, RoutedEventArgs e)
         {
             listar.IsEnabled = false;
@@ -65,15 +77,16 @@ namespace Tema05
             email.Text = "";
             codigo.Text = "";
             curso.Text = "";
+            codigo.IsEnabled = true;
+            curso.IsEnabled = true;
+            lista.Header = "";
         }
-
         private void listar_Click(object sender, RoutedEventArgs e)
         {
             exibir.Items.Clear();
             foreach (Aluno a in tur.Listar())
                 exibir.Items.Add(a);
         }
-
         private void maior_ira_Click(object sender, RoutedEventArgs e)
         {
             exibir.Items.Clear();
