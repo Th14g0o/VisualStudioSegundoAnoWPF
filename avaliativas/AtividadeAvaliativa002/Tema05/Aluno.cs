@@ -64,7 +64,7 @@ namespace Tema05
 
         public override string ToString()
         {
-            return $"Aluno: {nome} | Matricula: {matricula} | IRA: {ira} | Email: {email}";
+            return $"Aluno: {nome} | Matricula: {matricula} | IRA: {ira}% | Email: {email}";
         }
         
 
