@@ -5,8 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema04"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Genero e Livro" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Header="Genero" Margin="5" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Nome" FontSize="12"  Margin="10,2"  Grid.ColumnSpan="2"/>
+                <TextBox x:Name="genero" Text="" FontSize="12" Grid.Row="1"  Margin="10,2" Grid.ColumnSpan="2"/>
+                <Button x:Name="reiniciar" Grid.Row="2" Grid.Column="1" Content="REINICIAR" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10,2" FontSize="12" IsEnabled="False" Click="reiniciar_Click"/>
+                <Button x:Name="criar" Grid.Row="2" Content="CRIAR" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10, 2" FontSize="12" Click="criar_Click" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Header="Aluno" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="NOME" FontSize="12"  Margin="5,2"/>
+                <TextBlock Text="AUTOR" FontSize="12" Grid.Column="1" Margin="5,2"/>
+                <TextBlock Text="PREÇO" FontSize="12" Grid.Column="2" Margin="5,2"/>
+                
+                <TextBox x:Name="nome" Text="" FontSize="12" Grid.Row="1"  Margin="5,2"/>
+                <TextBox x:Name="autor" Text="" FontSize="12" Grid.Row="1" Grid.Column="1" Margin="5,2" />
+                <TextBox x:Name="preco" Text="" FontSize="12" Grid.Row="1" Grid.Column="2" Margin="5,2" />
+               
+                <Button x:Name="inserir" Content="INSERIR" HorizontalContentAlignment="Center" Grid.Row="2" Margin="5,2" FontSize="12" IsEnabled="False" Click="inserir_Click"/>
+                <Button x:Name="listar" Content="LISTAR" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="5, 2" FontSize="12" IsEnabled="False" Click="listar_Click"/>
+                <Button x:Name="menor" Content="MENOR PREÇO" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="2" Margin="5,2" FontSize="12" IsEnabled="False" Click="menor_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="lista" Header="" Grid.Row="2" Margin="5">
+            <ListBox x:Name="exibir" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="12"/>
 
+        </GroupBox>
     </Grid>
 </Window>

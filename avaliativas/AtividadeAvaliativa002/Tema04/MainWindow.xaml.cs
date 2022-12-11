@@ -24,5 +24,66 @@ namespace Tema04
         {
             InitializeComponent();
         }
+        Genero gen;
+        private void criar_Click(object sender, RoutedEventArgs e)
+        {
+            gen = new Genero(genero.Text);
+            if (gen.GetNome() != "")
+            {
+                lista.Header = gen;
+                inserir.IsEnabled = true;
+                reiniciar.IsEnabled = true;
+                criar.IsEnabled = false;
+            }
+            
+        }
+        private bool novo = true;
+        private void inserir_Click(object sender, RoutedEventArgs e)
+        {
+            exibir.Items.Clear();
+            double v;         
+            Livro l;
+            if (double.TryParse(preco.Text, out v) == true && novo == true)
+            {
+                l = new Livro(nome.Text, autor.Text, v);
+                if(l.GetPreco() >= 0 && l.GetNome() != "-1" && l.GetAutor() != "-1")
+                {
+                    nome.Text = "";
+                    autor.Text = "";
+                    preco.Text = "";
+                    gen.Inserir(l);
+                    listar.IsEnabled = true;
+                    menor.IsEnabled = true;
+                }
+
+            }
+         
+        }
+
+        private void listar_Click(object sender, RoutedEventArgs e)
+        {
+            exibir.Items.Clear();
+            foreach (Livro l in gen.Listar())
+                exibir.Items.Add(l);
+        }
+
+        private void menor_Click(object sender, RoutedEventArgs e)
+        {
+            exibir.Items.Clear();
+            exibir.Items.Add(gen.MenorPreco());
+        }
+
+        private void reiniciar_Click(object sender, RoutedEventArgs e)
+        {
+            listar.IsEnabled = false;
+            menor.IsEnabled = false;
+            inserir.IsEnabled = false;
+            reiniciar.IsEnabled = false;
+            criar.IsEnabled = true;
+            genero.Text = "";
+            nome.Text = "";
+            autor.Text = "";
+            preco.Text = "";
+        }
     }
 }
