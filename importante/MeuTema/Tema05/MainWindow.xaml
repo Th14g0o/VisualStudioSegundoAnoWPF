@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema05"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Turma e Aluno" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -25,7 +25,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="CURSO" FontSize="12"  Margin="10,2"/>
                 <TextBlock Text="CODIGO" FontSize="12" Grid.Column="1" Margin="10,2"/>
-                <TextBox x:Name="curso" Text="" FontSize="12" Grid.Row="1"  Margin="10,2"/>
+                <TextBox x:Name="curso" Text="" FontSize="12" Grid.Row="1"  Margin="10,2" />
                 <TextBox x:Name="codigo" Text="" FontSize="12" Grid.Row="1" Grid.Column="1" Margin="10,2" />
                 <Button x:Name="reiniciar" Grid.Row="2" Grid.Column="1" Content="REINICIAR" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10,2" FontSize="12" Click="reiniciar_Click" IsEnabled="False"/>
                 <Button x:Name="criar" Grid.Row="2" Content="CRIAR" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10, 2" FontSize="12" Click="criar_Click"/>

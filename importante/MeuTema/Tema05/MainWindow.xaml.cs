@@ -24,9 +24,11 @@ namespace Tema05
         {
             InitializeComponent();
         }
+
         private Turma tur;
         private Aluno a;
         private bool novo_a = true, nova_tur = true;
+
         private void criar_Click(object sender, RoutedEventArgs e)
         {
             if (nova_tur == true)
@@ -41,9 +43,9 @@ namespace Tema05
             }
 
             if (tur.GetCurso() == "-1")
-                curso.Text = "INVALIDO";
+                curso.Text = "";
             if (tur.GetCodigo() == "-1")
-                codigo.Text = "INVALIDO";
+                codigo.Text = "";
 
             if (tur.GetCurso() != "-1" && tur.GetCodigo() != "-1")
             {
@@ -78,13 +80,13 @@ namespace Tema05
             }
 
             if (a.GetEmail() == "-1")
-                email.Text = "INVALIDO";
+                email.Text = "";
             if (a.GetNome() == "-1")
-                nome.Text = "INVALIDO";
+                nome.Text = "";
             if (a.GetMatricula() == "-1")
-                matricula.Text = "INVALIDO";
+                matricula.Text = "";
             if (a.GetIRA() == -1)
-                ira.Text = "INVALIDO";
+                ira.Text = "";
 
             if (a.GetEmail() != "-1" && a.GetNome() != "-1" && a.GetMatricula() != "-1" && a.GetIRA() != -1)
             {

@@ -16,10 +16,10 @@ namespace Tema05
             if (email.IndexOf('@') != -1) this.email = email;
             else this.email = "-1";
 
-            if (nome != "" && nome.ToUpper() != "INVALIDO" ) this.nome = nome;
+            if (nome != "") this.nome = nome;
             else this.nome = "-1";
 
-            if (matricula != "" && matricula.ToUpper() != "INVALIDO") this.matricula = matricula;
+            if (matricula != "") this.matricula = matricula;
             else this.matricula = "-1";
 
             if (ira >= 0) this.ira = ira;
@@ -33,12 +33,12 @@ namespace Tema05
         }
         public void SetNome(string nome)
         {
-            if (nome != "" && nome.ToUpper() != "INVALIDO") this.nome = nome;
+            if (nome != "") this.nome = nome;
             else this.nome = "-1";
         }
         public void SetMatricula(string matricula)
         {
-            if (matricula != "" && matricula.ToUpper() != "INVALIDO") this.matricula = matricula;
+            if (matricula != "") this.matricula = matricula;
             else this.matricula = "-1";
         }
         public void SetIRA(int ira)
