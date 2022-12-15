@@ -14,20 +14,20 @@ namespace Tema05
 
         public Turma(string curso, string codigo)
         {
-            if(curso != "" && curso.ToUpper() != "INVALIDO") this.curso = curso;
+            if(curso != "" ) this.curso = curso;
             else this.curso = "-1";
-            if(codigo != "" && codigo.ToUpper() != "INVALIDO") this.codigo = codigo;
+            if(codigo != "") this.codigo = codigo;
             else this.codigo = "-1";
         }
 
         public void SetCurso(string curso)
         {
-            if (curso != "" && curso.ToUpper() != "INVALIDO") this.curso = curso;
+            if (curso != "") this.curso = curso;
             else this.curso = "-1";
         }
         public void SetCodigo(string codigo)
         {
-            if (codigo != "" && codigo.ToUpper() != "INVALIDO") this.codigo = codigo;
+            if (codigo != "") this.codigo = codigo;
             else this.codigo = "-1";
         }
         public string GetCurso()
@@ -53,7 +53,6 @@ namespace Tema05
             alunos[indice] = a;
             indice++;
         }
-
 
         public Aluno[] Listar()
         {
