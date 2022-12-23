@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="600 " FontFamily="Comic Sans MS">
     <Grid>
-        <TextBlock Margin="164,10,0,0" FontSize="100" HorizontalAlignment="Left" Width="277" Height="140" VerticalAlignment="Top" ><Run Language="pt-br" Text="ZUAP"/></TextBlock>
+        <TextBlock Text="Zuap"  Margin="170,5,0,0" FontSize="100" HorizontalAlignment="Left" Width="260" Height="149" VerticalAlignment="Top" />
         <Button x:Name="cadastraA" Content="Cadastro de aluno" Margin="0,159,0,0" Click="cadastraA_Click" HorizontalAlignment="Center" Width="150" Height="29" VerticalAlignment="Top"/>
         <Button x:Name="cadastraT" Content="Cadastro de Turma" Margin="0,201,0,0" HorizontalAlignment="Center" Width="150" Height="29" VerticalAlignment="Top" Click="cadastraT_Click"/>
         <Button x:Name="matriA" Content="Matricular aluno" Margin="0,247,0,0" HorizontalAlignment="Center" Width="150" Height="29" VerticalAlignment="Top" Click="matriA_Click"/>
