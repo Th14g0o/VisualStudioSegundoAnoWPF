@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\
+C:\AulaVS\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\
 Suap001
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\AulaVs\VisualStudioAulas\Crude\Suap001\App.xaml
+C:\AulaVS\VisualStudioAulas\Crude\Suap001\App.xaml
 51111230788
 
-9-1477103500
+13597451866
 193-1891726104
 AlunoWindow.xaml;DiarioWindow.xaml;MainWindow.xaml;MatriculaWindow.xaml;TurmaWindow.xaml;
 
-True
+False
 

@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Suap001"
         mc:Ignorable="d"
-        Title="TurmaWindow" Height="400" Width="600">
+        Title="TurmaWindow" Height="400" Width="600" FontFamily="Comic Sans MS">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,10,0,0" Text="Curso" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="180,10,0,0" Text="Turma" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="305,10,0,0" Text="Ano Letivo" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+        <TextBox Name="txtCurso" HorizontalAlignment="Left" Margin="55,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtTurma" HorizontalAlignment="Left" Margin="180,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtAno" HorizontalAlignment="Left" Margin="305,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+
+        <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="59,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="101,53,0,0" VerticalAlignment="Top"/>
+        <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="162,53,0,0" VerticalAlignment="Top"/>
+
+        <ListBox Name="listTurmas" Margin="10,80,0,0" HorizontalAlignment="Left" Width="503" Height="179" VerticalAlignment="Top" />
     </Grid>
 </Window>

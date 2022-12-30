@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AulaVs\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj": {}
+    "C:\\AulaVS\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj": {}
   },
   "projects": {
-    "C:\\AulaVs\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj": {
+    "C:\\AulaVS\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AulaVs\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj",
+        "projectUniqueName": "C:\\AulaVS\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj",
         "projectName": "Suap001",
-        "projectPath": "C:\\AulaVs\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj",
+        "projectPath": "C:\\AulaVS\\VisualStudioAulas\\Crude\\Suap001\\Suap001.csproj",
         "packagesPath": "C:\\Users\\20211011110014\\.nuget\\packages\\",
-        "outputPath": "C:\\AulaVs\\VisualStudioAulas\\Crude\\Suap001\\obj\\",
+        "outputPath": "C:\\AulaVS\\VisualStudioAulas\\Crude\\Suap001\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20211011110014\\AppData\\Roaming\\NuGet\\NuGet.Config",
