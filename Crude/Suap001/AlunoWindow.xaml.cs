@@ -23,5 +23,53 @@ namespace Suap001
         {
             InitializeComponent();
         }
+
+        private void inseri_aluno_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Aluno a = new Aluno { Email = e_aluno.Text, Id = int.Parse(id_aluno.Text), IdTurma = int.Parse(idt_aluno.Text), Matricula = m_aluno.Text, Nome = n_aluno.Text };
+                NAluno.Inserir(a);
+                lista_aluno_Click(sender, e);
+            }
+            catch
+            {
+                MessageBox.Show("Coloque numeros no ID e/ou no ID da turma");
+            }
+        }
+
+        private void lista_aluno_Click(object sender, RoutedEventArgs e)
+        {
+            exibi_aluno.ItemsSource = null;
+            exibi_aluno.ItemsSource = NAluno.Listar();
+        }
+
+        private void atualiza_aluno_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Aluno a = new Aluno { Email = e_aluno.Text, Id = int.Parse(id_aluno.Text), IdTurma = int.Parse(idt_aluno.Text), Matricula = m_aluno.Text, Nome = n_aluno.Text };
+                NAluno.Atualizar(a);
+                lista_aluno_Click(sender, e);
+            }
+            catch
+            {
+                MessageBox.Show("Coloque numeros no ID e/ou no ID da turma");
+            }
+            
+        }
+
+        private void apaga_aluno_Click(object sender, RoutedEventArgs e)
+        {
+            if (exibi_aluno.SelectedItem != null)
+            {
+                NAluno.Exluir((Aluno)exibi_aluno.SelectedItem);
+                lista_aluno_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item!");
+            }
+        }
     }
 }

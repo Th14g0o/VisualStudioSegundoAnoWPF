@@ -7,6 +7,38 @@
         mc:Ignorable="d"
         Title="AlunoWindow" Height="400" Width="600" FontFamily="Comic Sans MS">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="ID" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="ID da turma" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Nome" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Matricula" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Email" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBox x:Name="id_aluno" Text="" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" />
+        <TextBox x:Name="idt_aluno" Text="" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100"/>
+        <TextBox x:Name="n_aluno" Text="" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" />
+        <TextBox x:Name="m_aluno" Text="" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100"/>
+        <TextBox x:Name="e_aluno" Text="" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" />
+
+        <Button x:Name="inseri_aluno" Content="Inserir" Grid.Row="2" Margin="10" Click="inseri_aluno_Click"/>
+        <Button x:Name="lista_aluno" Content="Listar" Grid.Row="2" Grid.Column="1" Margin="10" Click="lista_aluno_Click"/>
+        <Button x:Name="atualiza_aluno" Content="Atualizar" Grid.Row="2" Grid.Column="2" Margin="10" Click="atualiza_aluno_Click"/>
+        <Button x:Name="apaga_aluno" Content="Apagar" Grid.Row="2" Grid.Column="3" Margin="10" Click="apaga_aluno_Click"/>
+        <ListBox x:Name="exibi_aluno" Grid.Row="3" Grid.ColumnSpan="5" Margin="10"/>
+
+
     </Grid>
 </Window>
