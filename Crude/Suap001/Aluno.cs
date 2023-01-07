@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Suap001
 {
-    class Aluno
+    public class Aluno
     {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Matricula { get; set; }
+        public string Email { get; set; }
+        public int IdTurma { get; set; }
+        public override string ToString()
+        {
+            return $"|{Id} - {Nome} - {Matricula} - {Email} - Turma: {IdTurma}";
+        }
     }
 }

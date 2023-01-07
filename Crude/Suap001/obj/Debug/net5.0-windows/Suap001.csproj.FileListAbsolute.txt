@@ -3,7 +3,6 @@ C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\Suap001.deps.
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\Suap001.runtimeconfig.json
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\Suap001.runtimeconfig.dev.json
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\Suap001.dll
-C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\ref\Suap001.dll
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\bin\Debug\net5.0-windows\Suap001.pdb
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\Suap001.csproj.AssemblyReference.cache
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\AlunoWindow.g.cs
@@ -28,3 +27,4 @@ C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\Suap001.dll
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\ref\Suap001.dll
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\Suap001.pdb
 C:\AulaVs\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\Suap001.genruntimeconfig.cache
+C:\AulaVS\VisualStudioAulas\Crude\Suap001\obj\Debug\net5.0-windows\refint\Suap001.dll
