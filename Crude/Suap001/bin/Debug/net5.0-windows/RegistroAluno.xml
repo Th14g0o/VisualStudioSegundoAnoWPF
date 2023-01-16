@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfAluno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfAluno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Aluno>
+    <Id>1</Id>
+    <Nome>Thiago</Nome>
+    <Matricula>2014</Matricula>
+    <Email>th@gmail.com</Email>
+    <IdTurma>2</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>2</Id>
+    <Nome>Pedro</Nome>
+    <Matricula>2015</Matricula>
+    <Email>pv@gmail.com</Email>
+    <IdTurma>2</IdTurma>
+  </Aluno>
+  <Aluno>
+    <Id>3</Id>
+    <Nome>Rita</Nome>
+    <Matricula>2010</Matricula>
+    <Email>rt@gmail.com</Email>
+    <IdTurma>2</IdTurma>
+  </Aluno>
+</ArrayOfAluno>

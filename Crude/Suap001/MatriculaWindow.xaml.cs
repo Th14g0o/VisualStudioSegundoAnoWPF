@@ -23,5 +23,26 @@ namespace Suap001
         {
             InitializeComponent();
         }
+
+        private void listar_Click(object sender, RoutedEventArgs e)
+        {
+            lista_alunos.ItemsSource = null;
+            lista_alunos.ItemsSource = NAluno.Listar();
+            lista_turmas.ItemsSource = null;
+            lista_turmas.ItemsSource= NTurma.Listar();
+        }
+
+        private void matricular_Click(object sender, RoutedEventArgs e)
+        {
+            if (lista_alunos.SelectedItem != null && lista_turmas.SelectedItems != null)
+            {
+                Aluno a = (Aluno)lista_alunos.SelectedItem;
+                Turma t = (Turma)lista_turmas.SelectedItem;
+                NAluno.Matricular(a, t);
+                listar_Click(sender, e);
+            }
+            else
+                MessageBox.Show("Selecione uma turma e/ou um aluno!");
+        }
     }
 }

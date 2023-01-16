@@ -37,7 +37,7 @@
         <Button x:Name="lista_aluno" Content="Listar" Grid.Row="2" Grid.Column="1" Margin="10" Click="lista_aluno_Click"/>
         <Button x:Name="atualiza_aluno" Content="Atualizar" Grid.Row="2" Grid.Column="2" Margin="10" Click="atualiza_aluno_Click"/>
         <Button x:Name="apaga_aluno" Content="Apagar" Grid.Row="2" Grid.Column="3" Margin="10" Click="apaga_aluno_Click"/>
-        <ListBox x:Name="exibi_aluno" Grid.Row="3" Grid.ColumnSpan="5" Margin="10"/>
+        <ListBox x:Name="exibi_aluno" Grid.Row="3" Grid.ColumnSpan="5" Margin="10" SelectionChanged="exibi_aluno_SelectionChanged"/>
 
 
     </Grid>

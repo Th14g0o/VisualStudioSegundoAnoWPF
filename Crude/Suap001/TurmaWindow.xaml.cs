@@ -61,5 +61,14 @@ namespace Suap001
             }
 
         }
+
+        private void listTurmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Turma t = (Turma)listTurmas.SelectedItem;
+            txtId.Text = t.Id.ToString();
+            txtCurso.Text = t.Curso;
+            txtAno.Text = t.AnoLetivo.ToString();
+            txtTurma.Text = t.Descricao;
+        }
     }
 }
