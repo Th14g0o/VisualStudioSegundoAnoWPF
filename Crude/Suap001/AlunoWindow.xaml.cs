@@ -71,5 +71,15 @@ namespace Suap001
                 MessageBox.Show("Selecione um item!");
             }
         }
+
+        private void exibi_aluno_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Aluno a = (Aluno)exibi_aluno.SelectedItem;
+            e_aluno.Text = a.Email;
+            id_aluno.Text = a.Id.ToString();
+            idt_aluno.Text = a.IdTurma.ToString();
+            m_aluno.Text = a.Matricula;
+            n_aluno.Text = a.Nome;
+        }
     }
 }

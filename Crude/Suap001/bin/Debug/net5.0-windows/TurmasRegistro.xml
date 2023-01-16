@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTurma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Turma>
+    <Id>1</Id>
+    <Curso>Infoweb</Curso>
+    <Descricao>1°Ano</Descricao>
+    <AnoLetivo>2023</AnoLetivo>
+  </Turma>
+  <Turma>
+    <Id>2</Id>
+    <Curso>Infoweb</Curso>
+    <Descricao>2°Ano</Descricao>
+    <AnoLetivo>2023</AnoLetivo>
+  </Turma>
+  <Turma>
+    <Id>3</Id>
+    <Curso>Infoweb</Curso>
+    <Descricao>3°Ano</Descricao>
+    <AnoLetivo>2023</AnoLetivo>
+  </Turma>
+  <Turma>
+    <Id>4</Id>
+    <Curso>Infoweb</Curso>
+    <Descricao>4°Ano</Descricao>
+    <AnoLetivo>2023</AnoLetivo>
+  </Turma>
+</ArrayOfTurma>

@@ -12,6 +12,11 @@ namespace Suap001
     {
         private static List<Aluno> alunos = new List<Aluno>();
 
+        public static void Matricular(Aluno a, Turma t)
+        {
+            a.IdTurma = t.Id;
+            Atualizar(a);
+        }
         public static void Inserir(Aluno a)
         {
             Abrir();

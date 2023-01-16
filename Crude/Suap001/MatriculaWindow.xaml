@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MatriculaWindow" Height="400" Width="600" FontFamily="Comic Sans MS" >
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lista_turmas" Grid.ColumnSpan="2" Margin="10"/>
+        <ListBox x:Name="lista_alunos" Grid.ColumnSpan="2" Grid.Row="1" Margin="10"/>
+        <Button x:Name="listar" Content="Listar" Grid.Row="2" Margin="10" Click="listar_Click"/>
+        <Button x:Name="matricular" Content="Matricular" Grid.Row="2" Margin="10" Grid.Column="1" Click="matricular_Click"/>
     </Grid>
 </Window>
