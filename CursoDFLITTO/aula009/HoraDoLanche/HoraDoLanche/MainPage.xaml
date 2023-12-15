@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HoraDoLanche.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Trocando a imagem" HorizontalTextAlignment="Center"/>
+        <Image x:Name="Imagem"  Grid.Row="1" Aspect="AspectFill" Margin="20"/>
+        <!--O Aspect permita adaptar o aspecto da imagem. O AspectFill altera cortando e adptando a imagem ao espaço
+        de modo que não tenga distorçãp-->
+        <Button Text="Transforme-se" Grid.Row="2" Clicked="Troca" Margin="20"/>
+    </StackLayout>
+
+</ContentPage>

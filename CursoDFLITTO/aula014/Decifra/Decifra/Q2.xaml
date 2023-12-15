@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decifra.Q2"
+             Title="Acerte o anime"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Label Text="Acerte o anime" FontSize="25" TextColor="Green" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Anime " HorizontalOptions="End" FontSize="36" TextColor="White"/>
+                <Label Text="02" HorizontalOptions="Start" FontSize="36" TextColor="Green"/>
+            </StackLayout>
+            <Label Text="Um jovem se encontra totalmente desesperado ao entrar em um mundo em que seu desejo é devorar pessoas" HorizontalTextAlignment="Center" TextColor="DeepSkyBlue"/>
+            <Image x:Name="Imagem" Source="imgs/KanekiPc.png" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Tokyo Ghoul" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Tokyo Ghoul RE" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Tokyo Revengers"  Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

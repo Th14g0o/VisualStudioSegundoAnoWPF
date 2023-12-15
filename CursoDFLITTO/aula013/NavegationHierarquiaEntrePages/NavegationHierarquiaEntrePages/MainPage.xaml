@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavegationHierarquiaEntrePages.MainPage">
+
+    <StackLayout>
+        <Label Text="NAVEGAÇÃO HIERARQUICA ENTRE PAGINAS" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="Comic Snas MS"/>
+        <!--Navegação hierarquica consiste empilhar(coloca) e desempilhar(tira) paginas. 
+        A pagina inicial precisa ser "marcado" no app.xaml.cs-->
+        <Image Source="dbx1.png" HorizontalOptions="Center"/>
+        <Button x:Name="Troca1"  Text="Trocar de pagina" Clicked="Troca1_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

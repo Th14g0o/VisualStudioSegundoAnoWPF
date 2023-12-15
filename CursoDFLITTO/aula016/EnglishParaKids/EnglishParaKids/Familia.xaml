@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishParaKids.Familia"
+             Title="Familia(Family)"
+             BackgroundColor="LightSeaGreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <StackLayout Orientation="Horizontal" BackgroundColor="DeepSkyBlue"  Padding="10, 5">
+                    <Image x:Name="Vozinho" Source="imgs/familia/vozinhopc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Avô" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Grand Father" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  BackgroundColor="DeepPink" Padding="10, 5">
+                    <Image x:Name="Vozinha" Source="imgs/familia/vozinhapc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Avó" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Grand Mother" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="DeepSkyBlue"  Padding="10, 5">
+                    <Image x:Name="Pai" Source="imgs/familia/paipc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Pai" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Father" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  BackgroundColor="DeepPink" Padding="10, 5">
+                    <Image x:Name="Mae" Source="imgs/familia/maepc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Mãe" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Mother" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="DeepSkyBlue"  Padding="10, 5">
+                    <Image x:Name="Filho" Source="imgs/familia/filhopc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Filho" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Son" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  BackgroundColor="DeepPink" Padding="10, 5">
+                    <Image x:Name="Filha" Source="imgs/familia/filhapc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <Label Text="Português: Filha" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Daughter" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

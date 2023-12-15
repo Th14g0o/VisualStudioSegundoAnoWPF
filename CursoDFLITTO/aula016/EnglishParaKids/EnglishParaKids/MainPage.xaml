@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishParaKids.MainPage"
+             Title="Inglês para crianças(English For Kids)"
+             BackgroundColor="LightYellow">
+
+    <ScrollView>
+        <StackLayout >
+            <Image x:Name="Destaque" Source="imgs/destaquepc.png" VerticalOptions="Start"/>
+            <Button Text="Cores" VerticalOptions="FillAndExpand" Clicked="Direcionar" Margin="20, 0" BackgroundColor="SandyBrown" TextColor="White" BorderColor="SlateGray" BorderWidth="5" FontSize="Large" FontFamily="Comic Sans MS"/>
+            <Button Text="Numeros" VerticalOptions="FillAndExpand" Clicked="Direcionar" Margin="20, 0" BackgroundColor="LimeGreen" TextColor="White" BorderColor="SlateGray" BorderWidth="5" FontSize="Large" FontFamily="Comic Sans MS"/>
+            <Button Text="Familia" VerticalOptions="FillAndExpand" Clicked="Direcionar" Margin="20, 0" BackgroundColor="DeepSkyBlue" TextColor="White" BorderColor="SlateGray" BorderWidth="5" FontSize="Large" FontFamily="Comic Sans MS"/>
+            <Button Text="Sair" VerticalOptions="FillAndExpand" Clicked="Sair" Margin="20, 0" BackgroundColor="Firebrick" TextColor="White" BorderColor="SlateGray" BorderWidth="5" FontSize="Large" FontFamily="Comic Sans MS"/>
+            <Image x:Name="Link" Source="imgs/linkpc.png" VerticalOptions="End">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="VisitarLink" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

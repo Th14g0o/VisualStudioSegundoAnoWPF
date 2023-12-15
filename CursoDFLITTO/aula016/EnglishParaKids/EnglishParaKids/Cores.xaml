@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishParaKids.Cores"
+             Title="Cores(Colors)"
+             BackgroundColor="DarkOliveGreen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10">
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Preto" Source="imgs/cores/pretpc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Preto" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Black" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Branco" Source="imgs/cores/branpc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Branco" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: White" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Azul" Source="imgs/cores/azulpc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Azul" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Blue" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Vermelho" Source="imgs/cores/vermpc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Vermelho" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Red" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Verde" Source="imgs/cores/verdpc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Verde" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Green" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Image x:Name="Laranja" Source="imgs/cores/larapc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="20, 0">
+                        <Label Text="Português: Laranja" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Orange" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

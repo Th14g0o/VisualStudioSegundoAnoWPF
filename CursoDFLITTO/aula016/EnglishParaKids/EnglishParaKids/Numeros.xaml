@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishParaKids.Numeros"
+             Title="Numeros(Numbers)"
+             BackgroundColor="LightSalmon">
+    <ContentPage.Content>
+        <ScrollView>
+            <!--permite rolar a tela do elemento a seguir(Scroll). 
+            essa tag so influencia um unico "filho"(Nesse caso o StackLayout "organização das cores"-->
+            <StackLayout Spacing="10">
+                <!--organização das cores-->
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <!--organização de uma cor-->
+                    <Image x:Name="Zero" Source="imgs/numeros/00pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="15, 0">
+                        <!--organização do textto-->
+                        <Label Text="Português: Zero" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Zero" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <Image x:Name="Um" Source="imgs/numeros/01pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="15, 0">
+                        <Label Text="Português: Um" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: One" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <Image x:Name="Dois" Source="imgs/numeros/02pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="15, 0">
+                        <Label Text="Português: Dois" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Two" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <Image x:Name="Tres" Source="imgs/numeros/03pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="15, 0">
+                        <Label Text="Português: Três" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Tree" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <Image x:Name="Quatro" Source="imgs/numeros/04pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center"  Margin="15, 0">
+                        <Label Text="Português: Quatro" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Four" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10, 5">
+                    <Image x:Name="Cinco" Source="imgs/numeros/05pc.png" HeightRequest="200" Aspect="AspectFit"/>
+                    <StackLayout VerticalOptions="Center" Margin="15, 0">
+                        <Label Text="Português: Cinco" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                        <Label Text="Inglês: Five" TextColor="White" FontSize="Medium" FontFamily="Comic Sans MS"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreaDoTriangulo.Ex2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CALCULAR O FATORIAL DE UM NUMERO" HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="Comic Sans MS"/>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="Numero" Placeholder="Informe um numero aqui" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="Executar" Text="Calcular" Clicked="Executar_Clicked" />
+            </StackLayout>
+            <Label x:Name="Resultado" HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="Comic Sans MS"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

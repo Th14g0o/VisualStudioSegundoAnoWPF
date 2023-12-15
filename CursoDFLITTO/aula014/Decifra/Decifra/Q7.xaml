@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decifra.Q7"
+             Title="Acerte o anime"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Label Text="Acerte o anime" FontSize="25" TextColor="Green" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Anime " HorizontalOptions="End" FontSize="36" TextColor="White"/>
+                <Label Text="07" HorizontalOptions="Start" FontSize="36" TextColor="Green"/>
+            </StackLayout>
+            <Label Text="Um jovem se encontra preso em um mundo virtual, onde a unica escapatoria é vencer" HorizontalTextAlignment="Center" TextColor="DeepSkyBlue"/>
+            <Image x:Name="Imagem" Source="imgs/AsunaPc.png" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Sword Art Online Alicization" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Sword Art Online" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Tokyo Ghoul Re"  Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

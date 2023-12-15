@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComprarCafe.MainPage">
+
+    <StackLayout>
+        <Label Text="Compra de café" HorizontalOptions="Center" VerticalOptions="Center" FontSize="40"/>
+        <Image Source="https://www.pngplay.com/wp-content/uploads/7/Cafe-Coffee-Transparent-PNG.png"  HorizontalOptions="Center"/>
+        <!--Usando o caminho da imagem na web torna desnecessario colocar a imagem no drawable-->
+        <Label Text="Valor Unitario" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+        <Label Text="R$ 3.52" HorizontalTextAlignment="Center" FontSize="Large"/>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="-" Clicked="Recalculando" HorizontalOptions="FillAndExpand" FontSize="Large"/>
+            <Button Text="+" Clicked="Recalculando" HorizontalOptions="FillAndExpand" FontSize="Large"/>
+            <!--Os butões tentam preencher o espaço deles, por isso meio que dividem os espaço pela metate(pois so existe dois botões em um espaço)-->
+        </StackLayout>
+        <Label x:Name="QuantCoffe" Text="Quantidade: 0" HorizontalOptions="CenterAndExpand"  FontSize="Large"/>
+        <Label x:Name="TotalCoffe" Text="Total: R$ 0.00" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+        <!--O HorizontalOptions option permite organizar o espaço consumido pelo elemento na horizontal. 
+        CenterAndExpand centraliza o elemento no centro, e se expande pelo espaço que sobra, na horizontal-->
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decifra.Q8"
+             Title="Acerte o anime"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Label Text="Acerte o anime" FontSize="25" TextColor="Green" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Anime " HorizontalOptions="End" FontSize="36" TextColor="White"/>
+                <Label Text="08" HorizontalOptions="Start" FontSize="36" TextColor="Green"/>
+            </StackLayout>
+            <Label Text="Jovens, crescidos juntos na casa de um rico, terão que lutar com todas as forças para proteger a reencarnação de uma deusa" HorizontalTextAlignment="Center" TextColor="DeepSkyBlue"/>
+            <Image x:Name="Imagem" Source="imgs/DohkoPc.png" VerticalOptions="CenterAndExpand"/>
+            <Button Text="Samurai X" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Cavaleiros dos Zodiaco Omega" Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+            <Button Text="Cavaleiros dos Zodiaco"  Margin="40, 0" Clicked="Verificar" BackgroundColor="DeepSkyBlue" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DefinindoEventosPeloXaml.CalculadoraSimples">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculadora Simples" />
+            <Label Text="Digite o primeiro valor:" />
+            <Entry x:Name="ValorUm" Placeholder="Digite o primeiro aqui" Keyboard="Numeric"/>
+            <Label Text="Digite o segundo valor:" />
+            <Entry x:Name="ValorDois" Placeholder="Digite o segundo aqui" Keyboard="Numeric"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="+" Clicked="Calculo"/>
+                <Button Text="-" Clicked="Calculo"/>
+                <Button Text="/" Clicked="Calculo"/>
+                <Button Text="*" Clicked="Calculo"/>
+            </StackLayout>
+            <Label x:Name="Resposta" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

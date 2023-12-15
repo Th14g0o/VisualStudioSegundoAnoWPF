@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SitesFamosos.MainPage">
+
+    <StackLayout>
+        <Label Text="Sites famosos" HorizontalOptions="Center"/>
+        <Image x:Name="site1" Source="site1.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FoiClicado1" NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <!--<Image x:Name="site2" Source="">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FoiClicado2" NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image x:Name="site3" Source="">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FoiClicado3" NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>-->
+    </StackLayout>
+
+</ContentPage>

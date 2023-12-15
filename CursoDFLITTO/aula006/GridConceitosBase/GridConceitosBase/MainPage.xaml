@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridConceitosBase.MainPage">
+
+    <!--<StackLayout></StackLayout>-->
+    <!-- 11-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <!--Ocupa o espaço restante-->
+            <RowDefinition Height="200"/>
+            <!--altura = 200px-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="Auto"/>
+            <!--Largura se adapta ao conteudo-->
+            <ColumnDefinition Width="*"/>
+            <!--Ocupa o espaço restante-->
+        </Grid.ColumnDefinitions>
+        <Button Text="Esquerda superior" />
+        <Button Text="Direita superior" Grid.Column="1"/>
+        <Button Text="Esquerda meio" Grid.Row="1"/>
+        <Button Text="Direita meio" Grid.Row="1" Grid.Column="1"/>
+        <Button Text="Esquerda inferior" Grid.Row="2"/>
+        <Button Text="Direita inferior" Grid.Row="2" Grid.Column="1"/>
+        <!--O Grid.Row define em que linha o elemento esta localiza, a posição começa do 0, sendo ela a primeira linha(Os que estão 
+        na linha 0 não é necessario escrever o Grid.Row, apneas da posição 1 em diante(da linha/coluna 2 em diante).
+        O Grid.Column define em que coluna o elemento esta localiza, a posição começa do 0, sendo ela a primeira coluna(Os que estão 
+        na coluna 0 não é necessario escrever).
+        As linhas e colunas são definidas de acordo com a as do Grid.Definitions, ou seja, a primeira linha e com altura 2*-->
+
+    </Grid>
+
+</ContentPage>

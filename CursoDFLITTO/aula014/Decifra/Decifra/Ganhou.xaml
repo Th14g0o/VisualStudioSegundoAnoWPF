@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decifra.Ganhou"
+             Title="Acerte o anime"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Parabens" HorizontalOptions="End" FontSize="36" TextColor="White"/>
+                <Label Text="!" HorizontalOptions="Start" FontSize="36" TextColor="Green"/>
+            </StackLayout>
+            <Image x:Name="Imagem" Source="imgs/GanhouPc.png" VerticalOptions="CenterAndExpand"/>
+            <Button Text="REINICIAR" Margin="40, 0" FontSize="36" Clicked="Reiniciar" BackgroundColor="Green" TextColor="White" BorderColor="White" BorderWidth="3"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

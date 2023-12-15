@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreaDoTriangulo.Triangulo">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="3" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Permanece" Text="Base:"  FontSize="Medium"  TextColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Iniciar"/>
+                <Button x:Name="Excluido"  Text="Altura:" Grid.Row="1" FontSize="Medium"   TextColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Clicked="Iniciar" />
+                <Label x:Name="ba" Text="0" Grid.Column="1" FontSize="Medium"  Margin="0, 5" TextColor="White" BackgroundColor="DeepSkyBlue" HorizontalTextAlignment="End" VerticalTextAlignment="End" VerticalOptions="Center"/>
+                <Label x:Name="al" Text="0" Grid.Row="1" Grid.Column="1" FontSize="Medium"  Margin="0, 5" TextColor="White" BackgroundColor="DeepSkyBlue" HorizontalTextAlignment="End" VerticalTextAlignment="End" VerticalOptions="Center"/>
+                <Label x:Name="Resultado" Text="0" Grid.Row="2" Grid.ColumnSpan="2" FontSize="40" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="End" VerticalTextAlignment="End"/>
+            </Grid>
+            <Button Text="0"  Grid.Row="1" Grid.ColumnSpan="3" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="1"  Grid.Row="2" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="2"  Grid.Row="2" Grid.Column="1" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="3"  Grid.Row="2" Grid.Column="2" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="4"  Grid.Row="3" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="5"  Grid.Row="3" Grid.Column="1" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="6"  Grid.Row="3" Grid.Column="2" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="7"  Grid.Row="4" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="8"  Grid.Row="4" Grid.Column="1" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="9"  Grid.Row="4" Grid.Column="2" FontSize="Large" TextColor="White" BackgroundColor="DeepSkyBlue" Clicked="Atribuir"/>
+            <Button Text="="  Grid.Row="5" FontSize="Large" TextColor="White" BackgroundColor="CornflowerBlue" Clicked="Calcular"/>
+            <Button Text="Tri"  Grid.Row="5" Grid.Column="1" FontSize="Large" TextColor="White" BackgroundColor="CornflowerBlue" Clicked="Opera"/>
+            <Button Text="C" Grid.Row="5" Grid.Column="2" FontSize="Large" TextColor="White" BackgroundColor="Gray" Clicked="Limpar"/>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

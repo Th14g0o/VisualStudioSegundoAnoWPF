@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavegationHierarquiaEntrePages.MainPage2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="pag 2" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="Comic Snas MS"/>
+            <Image Source="dbx1.png" HorizontalOptions="Center" />
+            <Button x:Name="Troca2"  Text="Voltar" Clicked="Troca2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

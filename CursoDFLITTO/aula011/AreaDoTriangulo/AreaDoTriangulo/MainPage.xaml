@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreaDoTriangulo.MainPage">
+
+    <StackLayout>
+        <Label Text="CALCULAR A ÁREA DE UM TRIANGÛLO" HorizontalOptions="Center" FontSize="Large" FontFamily="Comic Sans MS"/>
+        <Entry x:Name="baseT" Keyboard="Numeric" Placeholder="Digite a base aqui"/>
+        <Entry x:Name="alturaT" Keyboard="Numeric" Placeholder="Digite a altura aqui"/>
+        <Button Text="Calcular" Clicked="Calcular"/>
+        <Label x:Name="Resultado" HorizontalOptions="Center" FontSize="Large" FontFamily="Comic Sans MS"/>
+    </StackLayout>
+
+</ContentPage>
